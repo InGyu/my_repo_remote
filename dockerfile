@@ -2,8 +2,8 @@ FROM ubuntu:latest
 
 WORKDIR /my_repo
 
-RUN apt update && apt upgrade
-RUN apt install git
+RUN apt update && apt upgrade -y
+RUN apt install git -y
 
 COPY . /my_repo/
 
